@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Max Shampoo",
+      "inStock": true,
+      "price": 32
+    },
+    {
+      "id": 2,
+      "title": "Max Face Mask",
+      "inStock": true,
+      "price": 420
+    },
+    {
+      "id": 3,
+      "title": "Max Oil",
+      "inStock": false,
+      "price": 980
+    },
+    {
+      "id": 4,
+      "title": "Max Hair Repair",
+      "inStock": true,
+      "price": 380
+    },
+    {
+      "id": 5,
+      "title": "Max Soap",
+      "inStock": true,
+      "price": 135
+    }
+  ],
+  "users": []
+}

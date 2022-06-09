@@ -1,0 +1,5 @@
+<div class="product">
+    <span *ngIf="!currentProduct?.inStock">Out of stock</span>
+    <h3>{{currentProduct?.title}}</h3>
+    <p>Price: ${{currentProduct?.price}}</p>
+</div>

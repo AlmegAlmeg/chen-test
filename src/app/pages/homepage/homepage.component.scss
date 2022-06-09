@@ -1,0 +1,27 @@
+header {
+  background-color: rgba(102, 51, 153, 0.7);
+  text-align: center;
+  padding: 1.5rem;
+  h1 {
+    color: white;
+  }
+}
+
+main{
+  padding: 2rem;
+  max-width: 50rem;
+  margin: auto;
+  input{
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+  .products-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .error-text{
+    color: red;
+  }
+}

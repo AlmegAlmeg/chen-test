@@ -1,0 +1,11 @@
+<header>
+    <h1>Chen is queen!</h1>
+</header>
+
+<main>
+    <input type="text" (keyup)="handleFilter($event)" placeholder="Search for an item">
+    <div class="products-grid">
+        <app-single-product *ngFor="let item of filteredArr" [currentProduct]="item"></app-single-product>
+    </div>
+    <p *ngIf="isNotFound" class="error-text">No results found!</p>
+</main>
