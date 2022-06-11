@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import Product from 'src/app/model/product';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-single-product',
@@ -8,7 +9,7 @@ import Product from 'src/app/model/product';
 })
 export class SingleProductComponent implements OnInit {
 
-  constructor() {
+  constructor(private cartService: CartService) {
 
   }
   @Input() currentProduct: Product | undefined
@@ -16,4 +17,7 @@ export class SingleProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  updateProduct(state: boolean):void{
+    this.cartService.updateCart(this.currentProduct!, state)
+  }
 }

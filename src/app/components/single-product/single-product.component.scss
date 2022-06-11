@@ -4,11 +4,8 @@
     border-radius: 1rem;
     border: 1px solid black;
     transition: all 200ms;
-    cursor: pointer;
     overflow: hidden;
-    &:hover{
-        background-color: rgba(93, 136, 255, 0.7);
-    }
+
     span{
         position: absolute;
         top: 0;
@@ -16,5 +13,15 @@
         background-color: red;
         padding: 0.3rem;
         border-bottom-right-radius: .3rem;
+    }
+
+    .btns{
+        button{
+            padding: 1rem;
+            background-color: lightblue;
+            border-radius: .5rem;
+            border: 2px solid white;
+            cursor: pointer;
+        }
     }
 }

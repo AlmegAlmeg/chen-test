@@ -1,9 +1,11 @@
-<header>
-    <h1>Chen is queen!</h1>
-</header>
-
 <main>
-    <input type="text" (keyup)="handleFilter($event)" placeholder="Search for an item">
+    <div class="search">
+        <input type="text" (keyup)="handleFilter($event)" placeholder="Search for an item">
+        <select (change)="handleOrderBy($event)">
+            <option value="" disabled selected>Please choose</option>
+            <option *ngFor="let option of selectOption" value="{{option.value}}">{{option.text}}</option>
+        </select>
+    </div>
     <div class="products-grid">
         <app-single-product *ngFor="let item of filteredArr" [currentProduct]="item"></app-single-product>
     </div>
